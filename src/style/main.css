@@ -215,6 +215,8 @@ div.skin-items {
 }
 
 input.skinName {
+	box-sizing: border-box;
+	height: 42px;
 	padding: 11px;
 	width: calc(100% - 105px);
 	background-color: #fff2;
