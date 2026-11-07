@@ -1,560 +1,559 @@
 :root {
-  --text-select: none;
-  --header-color: #FFF;
-  --header-height: 45px;
-  --scroll-height-margin: 7.5px;
-  --outline: 1px solid #77A9;
-  --scroll-item-width: calc(100% - 15px);
+	--text-select: none;
+	--header-color: #fff;
+	--header-height: 45px;
+	--scroll-height-margin: 7.5px;
+	--outline: 1px solid #77a9;
+	--scroll-item-width: calc(100% - 15px);
 }
 
 body {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 button {
-  position: relative;
-  cursor: pointer;
-  outline: none;
+	position: relative;
+	cursor: pointer;
+	outline: none;
 }
 
 div.body {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 div.body::-webkit-scrollbar {
-  background-color: #0008;
-  width: 8px;
+	background-color: #0008;
+	width: 8px;
 }
 
 div.body::-webkit-scrollbar-thumb {
-  cursor: n-resize;
-  background-color: #FFF8;
+	cursor: n-resize;
+	background-color: #fff8;
 }
 
 header.websiteHeader {
-  position: sticky;
-  top: 0px;
-  z-index: 999;
-  -webkit-user-select: var(--text-select);
-  user-select: var(--text-select);
-  background-color: var(--header-color);
-  height: var(--header-height);
-  line-height: var(--header-height);
-  font-size: calc(var(--header-height) / 2.5);
-  width: 100%;
-  text-align: center;
-  border-bottom: 5px solid #BBB;
-  outline: 1px solid #000;
-  font-family: minecraft-ten;
+	position: sticky;
+	top: 0px;
+	z-index: 999;
+	-webkit-user-select: var(--text-select);
+	user-select: var(--text-select);
+	background-color: var(--header-color);
+	height: var(--header-height);
+	line-height: var(--header-height);
+	font-size: calc(var(--header-height) / 2.5);
+	width: 100%;
+	text-align: center;
+	border-bottom: 5px solid #bbb;
+	outline: 1px solid #000;
+	font-family: minecraft-ten;
 }
 
 div.scrollAble {
-  margin-top: var(--scroll-height-margin);
-  margin-bottom: var(--scroll-height-margin);
-  outline: var(--outline);
+	margin-top: var(--scroll-height-margin);
+	margin-bottom: var(--scroll-height-margin);
+	outline: var(--outline);
 
-  padding: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  position: static;
-  background-color: rgba(0, 0, 15, 0.8);
-  width: calc(100% - 50px);
-  max-width: 1000px;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	position: static;
+	background-color: rgba(0, 0, 15, 0.8);
+	width: calc(100% - 50px);
+	max-width: 1000px;
 }
 
 div.verticle-stack {
-  position: relative;
-  width: var(--scroll-item-width);
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
+	position: relative;
+	width: var(--scroll-item-width);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 div.dropdown {
-  width: 100%;
-  transition: 0.5s;
-  position: relative;
-  border: 1px solid #FFF8;
-  background-color: #0005;
+	width: 100%;
+	transition: 0.5s;
+	position: relative;
+	border: 1px solid #fff8;
+	background-color: #0005;
 }
 
 div.dropdown-arrow {
-  position: absolute;
-  transition: 0.5s;
-  top: 50%;
-  right: 5px;
-  transform: rotate(180deg)translateY(5px);
-  width: 0px;
-  height: 0px;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 12px solid #FFF9;
+	position: absolute;
+	transition: 0.5s;
+	top: 50%;
+	right: 5px;
+	transform: rotate(180deg) translateY(5px);
+	width: 0px;
+	height: 0px;
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 12px solid #fff9;
 }
 
 div.dropdown button.dropdown-toggle {
-  position: relative;
-  transition: 0.5s;
-  left: 50%;
-  border: 1px solid #FFF0;
-  transform: translateX(-50%);
-  background-color: #0000;
-  width: calc(100% - 14px / 2);
-  font-size: 15px;
-  color: #FFF;
-  padding: 5px;
-  font-family: minecraft;
+	position: relative;
+	transition: 0.5s;
+	left: 50%;
+	border: 1px solid #fff0;
+	transform: translateX(-50%);
+	background-color: #0000;
+	width: calc(100% - 14px / 2);
+	font-size: 15px;
+	color: #fff;
+	padding: 5px;
+	font-family: minecraft;
 }
 
 div.dropdown button.dropdown-toggle span {
-  position: relative;
-  top: 1px;
+	position: relative;
+	top: 1px;
 }
 
 div.dropdown-active {
-  width: calc(100% - 10px);
-  padding: 5px;
-  padding-top: 7.5px;
-  padding-bottom: 7.5px;
+	width: calc(100% - 10px);
+	padding: 5px;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
 }
 
 div.dropdown-active button.dropdown-toggle {
-  background-color: #0005;
-  border-radius: 5px;
-  padding: 15px;
-  border: 1px solid #FFF8;
-  padding: 5px;
+	background-color: #0005;
+	border-radius: 5px;
+	padding: 15px;
+	border: 1px solid #fff8;
+	padding: 5px;
 }
 
 div.dropdown-content {
-  margin-top: 5px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 9.5px);
-  padding: 0px;
-  background-color: #0005;
-  border: 1px solid #FFF0;
-  border-radius: 0px;
-  display: none;
+	margin-top: 5px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 9.5px);
+	padding: 0px;
+	background-color: #0005;
+	border: 1px solid #fff0;
+	border-radius: 0px;
+	display: none;
 }
 
 div.dropdown-active div.dropdown-content {
-  border: 1px solid #FFF8;
-  width: calc(100% - 19px);
-  border-radius: 5px;
-  padding: 5px;
-  display: block;
+	border: 1px solid #fff8;
+	width: calc(100% - 19px);
+	border-radius: 5px;
+	padding: 5px;
+	display: block;
 }
 
 div.dropdown-active div.dropdown-arrow {
-  transform: rotate(90deg)translateY(-8px)translateX(-3.5px);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 8px solid #FFF9;
-  right: 10px;
+	transform: rotate(90deg) translateY(-8px) translateX(-3.5px);
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #fff9;
+	right: 10px;
 }
 
 a {
-  color: #FFF;
-  font-family: minecraft;
-  position: static;
+	color: #fff;
+	font-family: minecraft;
+	position: static;
 }
 
-
 div#drop-file-here {
-  position: absolute;
-  z-index: 1000;
-  background-color: #0008;
-  width: 100%;
-  height: 100%;
-  cursor: grab;
-  pointer-events: none;
+	position: absolute;
+	z-index: 1000;
+	background-color: #0008;
+	width: 100%;
+	height: 100%;
+	cursor: grab;
+	pointer-events: none;
 }
 
 div.skinList {
-  text-align: center;
-  width: 100%;
-  position: relative;
-  border: 1px solid #FFF8;
-  background-color: #0005;
-  padding-top: 10px;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	border: 1px solid #fff8;
+	background-color: #0005;
+	padding-top: 10px;
 }
 
 img#skinPreview {
-  filter: pixelate(1px);
-  margin-left: 5px;
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
+	filter: pixelate(1px);
+	margin-left: 5px;
+	width: 90px;
+	height: 90px;
+	object-fit: contain;
 }
 
 img {
-  image-rendering: pixelated;
+	image-rendering: pixelated;
 }
 
 div.skin-items {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
-  left: 0px;
-  text-align: left;
-  border: 1px solid #FFF8;
-  width: calc(100% - 25px);
-  padding-top: 5px;
-  padding-bottom: 5px;
-  background-color: #0008;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	left: 0px;
+	text-align: left;
+	border: 1px solid #fff8;
+	width: calc(100% - 25px);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #0008;
 }
 
 input.skinName {
-  padding: 11px;
-  width: calc(100% - 105px);
-  background-color: #FFF2;
-  transition: 0.5s;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid #FFF;
+	padding: 11px;
+	width: calc(100% - 105px);
+	background-color: #fff2;
+	transition: 0.5s;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #fff;
 
-  border-radius: 0px;
-  font-family: minecraft;
-  position: absolute;
-  top: 5px;
-  color: #FFF;
-  font-size: 15px;
-  right: 5px;
+	border-radius: 0px;
+	font-family: minecraft;
+	position: absolute;
+	top: 5px;
+	color: #fff;
+	font-size: 15px;
+	right: 5px;
 }
 
 input.skinName:hover {
-  background-color: #FFF3;
+	background-color: #fff3;
 }
 
 div.skin-option-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: calc(100% - 105px);
-  height: 42px;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: calc(100% - 105px);
+	height: 42px;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
 }
 
 button.skinTypeButton:hover {
-  background-color: #FFF5;
+	background-color: #fff5;
 }
 
 button.skinTypeButton {
-  transition: 0.5s;
-  font-family: minecraft;
-  height: 42px;
-  font-size: 15px;
-  color: #FFF;
-  background-color: #FFF3;
-  border: none;
-  border-bottom: 0px solid #FFF0;
-  outline: none;
-  top: 0px;
-  width: calc((100% - 47px) / 2);
+	transition: 0.5s;
+	font-family: minecraft;
+	height: 42px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #fff3;
+	border: none;
+	border-bottom: 0px solid #fff0;
+	outline: none;
+	top: 0px;
+	width: calc((100% - 47px) / 2);
 }
 
 button.skinTypeButtonActive {
-  top: -0.5px;
-  height: 41px;
-  background-color: #FFF4;
-  border-bottom: 1px solid #FFF;
+	top: -0.5px;
+	height: 41px;
+	background-color: #fff4;
+	border-bottom: 1px solid #fff;
 }
 
 button.squareButton {
-  padding-left: 5px;
-  height: 42px;
-  width: 42px;
+	padding-left: 5px;
+	height: 42px;
+	width: 42px;
 }
 
 button.removeTotem {
-  transition: 0.5s;
-  background-color: #F005;
-  border: none;
+	transition: 0.5s;
+	background-color: #f005;
+	border: none;
 }
 
 button.removeTotem:hover {
-  background-color: #F006;
+	background-color: #f006;
 }
 
 div.importElement {
-  height: 85px;
-  position: relative;
+	height: 85px;
+	position: relative;
 }
 
 input#importImage {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: pointer;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
 }
 
-input#importImage:hover+div.importImageText {
-  background-color: #FFF1;
+input#importImage:hover + div.importImageText {
+	background-color: #fff1;
 }
 
 div.importImageText {
-  transition: 0.3s;
-  background-color: #FFF0;
-  pointer-events: none;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
+	transition: 0.3s;
+	background-color: #fff0;
+	pointer-events: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
 }
 
 div.importImageText a {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 button.editTotemLightning {
-  display: none;
-  transition: 0.5s;
-  position: absolute;
-  background-color: #FFF4;
-  border: none;
-  right: 5px;
+	display: none;
+	transition: 0.5s;
+	position: absolute;
+	background-color: #fff4;
+	border: none;
+	right: 5px;
 }
 
 button.editTotemLightning:hover {
-  background-color: #FFF6;
+	background-color: #fff6;
 }
 
 button.squareButton img {
-  position: absolute;
-  transition: 0.5s;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 35px;
-  height: 35px;
+	position: absolute;
+	transition: 0.5s;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 35px;
+	height: 35px;
 }
 
 button.squareButton img.bocchi {
-  visibility: hidden;
-  opacity: 0;
+	visibility: hidden;
+	opacity: 0;
 }
 
 button.squareButton img.emppty {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 button.squareButton:hover img.bocchi {
-  visibility: visible;
-  opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 button.squareButton:hover img.emppty {
-  visibility: hidden;
-  opacity: 0;
+	visibility: hidden;
+	opacity: 0;
 }
 
 /* Skin Editor */
 div#skinEditorDialog {
-  overflow: hidden;
-  background-color: #0e0c13;
-  border-right: 3px solid #0003;
-  border-bottom: 3px solid #0003;
-  border-radius: 12px;
-  width: 1000px;
-  max-width: calc(100% - 80px);
-  height: calc(100% - 80px);
+	overflow: hidden;
+	background-color: #0e0c13;
+	border-right: 3px solid #0003;
+	border-bottom: 3px solid #0003;
+	border-radius: 12px;
+	width: 1000px;
+	max-width: calc(100% - 80px);
+	height: calc(100% - 80px);
 }
 
 div.editorContent {
-  position: relative;
-  width: calc(100% - 25px);
-  height: calc(100% - 25px);
-  margin: auto;
-  top: 12.5px;
+	position: relative;
+	width: calc(100% - 25px);
+	height: calc(100% - 25px);
+	margin: auto;
+	top: 12.5px;
 }
 
 div.editorLabel {
-  position: sticky;
-  top: 0px;
-  left: 0px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #FFF5;
-  background-color: #0e0c13;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff5;
+	background-color: #0e0c13;
 }
 
 div.editorLabel span {
-  color: #FFF;
-  position: relative;
-  top: 50%;
-  left: 10px;
-  font-size: 25px;
-  font-family: minecraft-ten;
-  transform: translateY(-50%);
-  padding-bottom: 2px;
+	color: #fff;
+	position: relative;
+	top: 50%;
+	left: 10px;
+	font-size: 25px;
+	font-family: minecraft-ten;
+	transform: translateY(-50%);
+	padding-bottom: 2px;
 }
 
 div.downloadPackage {
-  background-color: #000;
-  padding: 12.5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: sticky;
-  display: flex;
-  width: calc(100% - 20px);
-  bottom: 0px;
+	background-color: #000;
+	padding: 12.5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: sticky;
+	display: flex;
+	width: calc(100% - 20px);
+	bottom: 0px;
 }
 
 div.downloadPackage button {
-  position: relative;
-  height: 42px;
-  padding-left: 15px;
-  padding-right: 15px;
-  transition: 0.5s;
-  background-color: #FFF3;
-  outline: none;
-  border: none;
-  margin: 2.5px;
+	position: relative;
+	height: 42px;
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 0.5s;
+	background-color: #fff3;
+	outline: none;
+	border: none;
+	margin: 2.5px;
 }
 
 div.downloadPackage button:hover {
-  background-color: #FFF5;
+	background-color: #fff5;
 }
 
 div.downloadPackage button span {
-  position: static;
-  bottom: 2.5px;
-  color: #FFF;
-  font-family: minecraft;
+	position: static;
+	bottom: 2.5px;
+	color: #fff;
+	font-family: minecraft;
 }
 
 div.downloadPackage input {
-  color: #FFF;
-  font-family: minecraft;
-  position: relative;
-  width: 100%;
-  height: 42px;
-  padding-left: 15px;
-  padding-right: 15px;
-  transition: 0.5s;
-  background-color: #FFF3;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid #FFF;
-  top: 2.5px;
+	color: #fff;
+	font-family: minecraft;
+	position: relative;
+	width: 100%;
+	height: 42px;
+	padding-left: 15px;
+	padding-right: 15px;
+	transition: 0.5s;
+	background-color: #fff3;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #fff;
+	top: 2.5px;
 }
 
 div.downloadPackage input:hover {
-  background-color: #FFF5;
+	background-color: #fff5;
 }
 
 div.downloadPackage input::placeholder {
-  color: #FFF8;
+	color: #fff8;
 }
 
 div.buttonStack {
-  display: flex;
-  position: absolute;
-  bottom: 0px;
-  padding-top: 5px;
-  width: 100%;
-  border-top: 1px solid #FFF5;
+	display: flex;
+	position: absolute;
+	bottom: 0px;
+	padding-top: 5px;
+	width: 100%;
+	border-top: 1px solid #fff5;
 }
 
 div.buttonStack button {
-  position: relative;
-  height: 42px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 15px;
-  margin-left: auto;
-  border: none;
-  overflow: none;
-  font-family: minecraft;
-  color: #FFF;
-  transition: 0.5s;
-  background-color: #1c029a;
+	position: relative;
+	height: 42px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 15px;
+	margin-left: auto;
+	border: none;
+	overflow: none;
+	font-family: minecraft;
+	color: #fff;
+	transition: 0.5s;
+	background-color: #1c029a;
 }
 
 div.buttonStack button:hover {
-  background-color: #1c02DD;
+	background-color: #1c02dd;
 }
 
 div.imageEditorScreen {
-  position: absolute;
-  left: 0px;
-  top: 40px;
-  width: 100%;
-  height: calc(100% - 90px);
+	position: absolute;
+	left: 0px;
+	top: 40px;
+	width: 100%;
+	height: calc(100% - 90px);
 }
 
 div.imageEditor {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  height: 100%;
-  padding-right: 10px;
-  border-right: 1px solid #FFF5;
-  width: calc(100% - 310px);
-  overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	padding-right: 10px;
+	border-right: 1px solid #fff5;
+	width: calc(100% - 310px);
+	overflow: hidden;
 }
 
 div.renderer {
-  position: absolute;
-  cursor: crosshair;
-  left: 50%;
-  top: 50%;
-  background-color: #FFF2;
-  outline: 5px solid #FFF;
-  overflow: hidden;
-  transform: translateX(-50%)translateY(-50%);
+	position: absolute;
+	cursor: crosshair;
+	left: 50%;
+	top: 50%;
+	background-color: #fff2;
+	outline: 5px solid #fff;
+	overflow: hidden;
+	transform: translateX(-50%) translateY(-50%);
 }
 
 img#editorImage {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
 }
 
 div#imagePixelSelected {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
 }
 
 @keyframes borderAnimate {
-  0% {
-    border-color: #000;
-  }
+	0% {
+		border-color: #000;
+	}
 
-  50% {
-    border-color: #FFF;
-  }
+	50% {
+		border-color: #fff;
+	}
 
-  100% {
-    border-color: #000;
-  }
+	100% {
+		border-color: #000;
+	}
 }
 
 div#pixelHover {
-  position: absolute;
-  border: 1px solid #000;
-  pointer-events: none;
+	position: absolute;
+	border: 1px solid #000;
+	pointer-events: none;
 }
